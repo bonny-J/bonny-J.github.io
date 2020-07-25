@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="bonny-J"><title>how to create laravel project · bonny-J</title><meta name="description" content="前言Laravel作为国际性的PHP开发框架，它具有的优点：
+
+
+实操性强 
+灵活多变 
+安全性能佳…
+
+
+安装laravel，你的电脑必须符合以下条件：
+
+
+PHP&amp;gt; = 7.1.3 
+BCMath PHP扩展 
+Ctype PHP扩展 
+JSON PHP扩展 
+Mbstring PHP扩展"><meta name="keywords" content="博客"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 4.2.1"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">bonny-J</a></h3><div class="description"><p>你远比你想象中强大。<br> You are much stronger than you think.</p></div></div></div><ul class="social-links"><li><a href="https://github.com/bonny-J" target="_blank" rel="noopener"><i class="fa fa-github"></i></a></li><li><a href="jwen.jm0.0@gmail.com"><i class="fa fa-envelope"></i></a></li></ul><div class="footer"><div class="p"> <span>© 2017 - 2020 </span><i class="fa fa-star"></i><span> bonny-J</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><a href="https://github.com/mrcore/hexo-theme-Anatole-Core" target="_blank">Anatole-Core.  </a><a href="http://www.beian.miit.gov.cn/" target="_blank">&nbsp;粤ICP备号</a></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/tags">标签</a></li><li><a href="/about">关于</a></li><li><a href="/guestbook">留言</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>how to create laravel project</a></h3></div><div class="post-content"><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>Laravel作为国际性的PHP开发框架，它具有的优点：</p>
+<blockquote>
+<ul>
+<li>实操性强 </li>
+<li>灵活多变 </li>
+<li>安全性能佳…</li>
+</ul>
+</blockquote>
+<p>安装laravel，你的电脑必须符合以下条件：</p>
+<blockquote>
+<ul>
+<li>PHP&gt; = 7.1.3 </li>
+<li>BCMath PHP扩展 </li>
+<li>Ctype PHP扩展 </li>
+<li>JSON PHP扩展 </li>
+<li>Mbstring PHP扩展</li>
+<li>OpenSSL PHP扩展 </li>
+<li>PDO PHP扩展 </li>
+<li>Tokenizer PHP扩展 </li>
+<li>XML PHP扩展</li>
+</ul>
+</blockquote>
+<p>如果嫌配置麻烦，你可以利用已经集成好的工具来作为你的开发环境。如官方推荐的Laravel Homestead虚拟机，里面已经帮你配置好了上面所需，而且不喜欢还可以一键更新或删除。</p>
+<h3 id="安装composer"><a href="#安装composer" class="headerlink" title="安装composer"></a>安装composer</h3><p>laravel是依靠composer管理依赖的，因此点击进入 <a href="https://getcomposer.org/" target="_blank" rel="noopener">composer</a> 网站，点击下载<br><img src="https://img-blog.csdnimg.cn/20200530153207609.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjU0NjY4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>Windows用户点击第一个就行了。下载完你会得到exe程序，每次点击它会自动帮你更新成最新的composer<br><img src="https://img-blog.csdnimg.cn/20200530153220429.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjU0NjY4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>安装成功后，打开cmd输入composer，查看安装是否成功，成功界面如下。<br><img src="https://img-blog.csdnimg.cn/20200530153308772.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjU0NjY4MQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="composer安装laravel"><a href="#composer安装laravel" class="headerlink" title="composer安装laravel"></a>composer安装laravel</h3><p>有俩个办法，一是通过laravel安装器安装，安装速度较快；另一个是直接composer加载一个laravel项目，比较方便。</p>
+<h5 id="laravel安装器："><a href="#laravel安装器：" class="headerlink" title="laravel安装器："></a>laravel安装器：</h5><p>在cmd输入以下命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer global require laravel/installer</span><br></pre></td></tr></table></figure>
+
+<p>注意：执行完后你需要确保 $HOME/.composer/vendor/bin 在系统路径 ~/AppData/Roaming/Composer/vendor/bin中，其中 ~ 表示当前用户根目录，否则不能在命令行任意路径下调用 laravel 命令。</p>
+<blockquote>
+<p>其他操作系统的位置如下:<br>苹果系统： $HOME/.composer/vendor/bin </p>
+<p>GNU / Linux发行版：$HOME/.config/composer/vendor/bin</p>
+</blockquote>
+<p><strong>安装完成后，执行以下命令新建一个laravel项目。</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">laravel new 项目名</span><br></pre></td></tr></table></figure>
+
+<p>如执行laravel new blog，会在目标地址下新建一个blog的项目</p>
+<h5 id="composer直接安装项目"><a href="#composer直接安装项目" class="headerlink" title="composer直接安装项目"></a>composer直接安装项目</h5><p>命令行输入以下命令安装packagist镜像加速器，防止龟速。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer config -g repo.packagist composer https://packagist.phpcomposer.com</span><br></pre></td></tr></table></figure>
+
+<p>再执行以下命令安装项目</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer create-project --prefer-dist laravel/laravel 项目名</span><br></pre></td></tr></table></figure>
+
+<p>请把项目名改为你实际的项目名，如<br>composer create-project –prefer-dist laravel/laravel blog<br>将会创建一个名叫blog的laravel项目。</p>
+<h3 id="配置本地开发服务器"><a href="#配置本地开发服务器" class="headerlink" title="配置本地开发服务器"></a>配置本地开发服务器</h3><p>我们可以配置映射以达到在本地开发服务器上预览项目的效果，不同盒子配置步骤不同：<br>Homestead配置<br><a href="https://blog.csdn.net/weixin_42546681/article/details/101678724" target="_blank" rel="noopener">Phpstudy配置</a></p>
+<p>原理都是在服务器上添加站点，然后修改本地hosts文件。<br>详细后续更新，可以先关注我以防走丢。</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2020-05-31</span><i class="fa fa-tag"></i><a class="tag" href="/tags/laravel/" title="laravel">laravel </a><a class="tag" href="/tags/Tutorial/" title="Tutorial">Tutorial </a><span class="leancloud_visitors"></span></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="" onclick="javascript:join_favorite()" ref="sidebar"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" href="http://twitter.com/home?status=,http://yoursite.com/2020/05/31/how-to-create-laravel-project/,bonny-J,how to create laravel project,;" target="_blank" rel="noopener"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2020/05/31/how-to-configure-laravel-project-with-phpstudy/" title="how to configure laravel project with phpstudy">上一篇</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/2020/05/26/hello-myblog/" title="hello myblog">下一篇</a></li></ul></div><script src="/js/visitors.js"></script><a id="comments"></a><div id="vcomments" style="margin:0 30px;"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//cdn.jsdelivr.net/gh/xcss/valine@latest/dist/Valine.min.js"></script><script>var valine = new Valine({
+  el:'#vcomments',
+  notify:false || false, 
+  verify:false|| false, 
+  app_id:'',
+  app_key:'',
+  placeholder:'You are much stronger than you think.',
+  path: window.location.pathname,
+  serverURLs: '',
+  visitor:true,
+  recordIP:true,
+  avatar:'mp'
+})</script></div></div></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script><script src="/js/baidu-tongji.js"></script></body></html>
